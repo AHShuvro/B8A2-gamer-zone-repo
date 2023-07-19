@@ -272,9 +272,11 @@ nav {
 
 /* Games button styles  */
 .games-list {
+
     display: flex;
     justify-content: center;
     gap: 25px;
+    
 }
 
 .games-list>div {
@@ -509,7 +511,7 @@ nav {
 
     .games-list {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         justify-content: center;
         gap: 5px;
     }
@@ -537,9 +539,7 @@ nav {
         gap: 20px;
     }
 
-    .copyright {
-        
-    }
+    
 
 }
 
@@ -552,7 +552,7 @@ nav {
 
 /* Teblet responsive */
 
-@media screen and(min-width: 576px) and (max-width: 960px) {
+@media screen and (min-width: 576px) and (max-width: 960px) {
     .body {
         padding: 50px;
     }
@@ -682,9 +682,5 @@ nav {
     .footer-policy-links {
         grid-template-columns: repeat( 2, 1fr);
         gap: 20px;
-    }
-
-    .copyright {
-        
     }
 }
