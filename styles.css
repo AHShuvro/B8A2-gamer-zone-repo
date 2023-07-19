@@ -173,8 +173,13 @@ nav {
     text-align: center;
     margin-top: 120px;
 }
-.online-content h1{
+
+.online-content h1 {
     margin-bottom: 16px;
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 60px;
 }
 
 
@@ -192,18 +197,64 @@ nav {
     padding: 48px 240px 0px 240px;
     gap: 24px;
     justify-content: center;
+
 }
 
-.online-games-cards > div img{
-    
+.online-games-cards>div img {
+
     border: 4px solid #F948B2;
     border-radius: 18px;
     margin-bottom: 24px;
 }
 
-.online-games-cards > div{
+.online-games-cards>div {
     display: flex;
+    flex-direction: column;
+
 }
+
+
+
+/* Play section styles  */
+
+.play {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: end;
+    margin-top: 120px;
+    margin-right: 240px;
+    margin-bottom: 243px;
+    gap: 265px;
+
+}
+
+.play-content h1 {
+    margin-bottom: 24px;
+}
+
+.play span {
+    background: linear-gradient(180deg, #8758F1 0%, #F948B2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.play-img {
+    min-width: 634.833px;
+    min-height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./images/Rectangle\ 55.png');
+}
+
+.play-img img {
+    width: 318.5px;
+    height: 365.083px;
+    translate: -461px 360px;
+}
+
+
 
 
 
@@ -252,7 +303,7 @@ nav {
         flex-direction: column-reverse;
         margin-right: 0px;
         text-align: center;
-        gap:0px;
+        gap: 0px;
     }
 
     .banner-content {
@@ -286,11 +337,41 @@ nav {
         padding: 0px 20px;
     }
 
-    .online-content-cards > a{
+    .online-games-cards>div {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .online-content-cards>a {
         text-align: center;
     }
-    .online-games-cards > div{
+
+    /* play game responsive  */
+
+    .play {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+        margin-right: 20px;
+        gap: 50px;
+
     }
-    
+
+    .play-content h1 {
+        margin-bottom: 24px;
+    }
+
+    .play-img {
+        min-width: 0px;
+        min-height: 0px;
+    }
+
+    .play-img img {
+        width: calc(100vw - 150px);
+        height: 300px;
+        translate: -61px 60px;
+    }
+
+
 }
